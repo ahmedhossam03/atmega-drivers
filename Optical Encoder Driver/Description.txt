@@ -1,0 +1,1 @@
+Optical Encoder driver for position control of a DC motor, it can also be used with any type of encoder. Make sure to download all the folder and include them in the same project to avoid linking errors.
