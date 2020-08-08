@@ -1,0 +1,3 @@
+Driver made for Unipolar Stepper Motor, developed on Atmel Studion for Atmega128. tested on Proteus (Simulation) and real hardware.
+
+Check the schematic image for the connections.
