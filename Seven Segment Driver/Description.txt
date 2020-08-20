@@ -1,0 +1,3 @@
+7 Segment Driver for AVR developed on Atmel Studio and tested on hardware and Proteus using Atmega128. 
+
+The driver can be used on a single digit 7 segment or a four digit 7 segment.
