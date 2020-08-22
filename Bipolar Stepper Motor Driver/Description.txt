@@ -1,0 +1,3 @@
+Driver made for Bipolar Stepper Motor, developed on Atmel Studion for Atmega128. tested on Proteus (Simulation) and real hardware (NEMA).
+
+Check the schematic image for the connections.
