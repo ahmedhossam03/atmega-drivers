@@ -1,0 +1,4 @@
+Servo Motor Driver on Atmega128.. it relies on timer1 of the Atmega128
+
+
+Servo used and its datasheet: https://ram-e-shop.com/product/servo-fs5103b
