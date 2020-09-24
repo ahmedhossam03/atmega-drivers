@@ -87,7 +87,7 @@ void tmr2_set_counter(unsigned char counter_value)
 void tmr2_set_duty_cycle(unsigned char duty_cycle)
 {
 	//256 is 100%
-	tmr2_set_ocr( ( (duty_cycle * 256UL) / 100 ) - 1 );
+	tmr2_set_ocr( (duty_cycle * 255UL) / 100 );
 }
 
 void tmr2_overflow_isr_callback( void (*ptr_callback)(void) )
