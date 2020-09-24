@@ -557,7 +557,7 @@ void tmr1_set_counter(unsigned short counter_value)
 void tmr1_set_duty_cycle(unsigned char channel_select, unsigned short counter_top, unsigned char duty_cycle)
 {
 	unsigned short dc = 0;
-	dc = ( duty_cycle * (counter_top / 100.0) ) - 1;
+	dc = duty_cycle * (counter_top / 100.0);
 	switch(channel_select)
 	{
 		case TMR1_OCRA:
