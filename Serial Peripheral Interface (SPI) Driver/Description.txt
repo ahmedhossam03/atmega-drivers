@@ -1,0 +1,1 @@
+Don't forget to add "SPI_BEGIN_TRANSMISSION" before each transmition and "SPI_END_TRANSMISSION" after each one.
