@@ -1,0 +1,23 @@
+#include "led_matrix_max7219/max7219.h"
+
+unsigned char a[] = {0xFF, 0x88, 0x88, 0x88, 0xFF};
+unsigned char h[] = {0xFF, 0x08, 0x08, 0x08, 0xFF};
+unsigned char m[] = {0xFF, 0x40, 0x20, 0x40, 0xFF};
+unsigned char e[] = {0xFF, 0x89, 0x89, 0x89, 0x89};
+unsigned char d[] = {0xFF, 0x81, 0x81, 0x42, 0x3C};
+unsigned char c[] = {0x3C, 0x42, 0x81, 0x81, 0x81};
+unsigned char f[] = {0xFF, 0x88, 0x88, 0x88, 0x88};
+
+int main(void)
+{
+	max7219_init();
+	sei();  //enable global interrupt
+	while(1)
+    {
+		max7219_scroll_chars( a, sizeof(a) );
+		max7219_scroll_chars( h, sizeof(h) );
+		max7219_scroll_chars( m, sizeof(m) );
+		max7219_scroll_chars( e, sizeof(e) );
+		max7219_scroll_chars( d, sizeof(d) );
+    }
+}
