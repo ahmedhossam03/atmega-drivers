@@ -81,7 +81,16 @@ unsigned char spi_slave_tranceive(unsigned char data)
 	return SPDR;
 }
 
+static unsigned char received_data = 0x00;
+static unsigned char transmitted_data = 0x00;
+unsigned char spi_slav_tranceive_int(unsigned char data)
+{
+	transmitted_data = data;
+	return received_data;
+}
+
 ISR(SPI_STC_vect)
 {
-	
+	received_data = SPDR;
+	SPDR = transmitted_data;
 }
