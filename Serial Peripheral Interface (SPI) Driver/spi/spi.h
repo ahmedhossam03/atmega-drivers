@@ -35,10 +35,11 @@
 #define SPI_CLK_32				2
 
 #define SPI_BEGIN_TRANSMITION	( SPI_PORT |= (1 << SPI_SS) )
-#define SPI_END_TRANSMITION		( SPI_PORT &= ~(1 << SPI_SS) )
+#define SPI_END_TRANSMITION	( SPI_PORT &= ~(1 << SPI_SS) )
 
 void spi_init(unsigned char, unsigned char, unsigned char, unsigned char);
 unsigned char spi_mstr_tranceive(unsigned char);
 unsigned char spi_slav_tranceive(unsigned char);
+unsigned char spi_slav_tranceive_int(unsigned char);
 
 #endif
